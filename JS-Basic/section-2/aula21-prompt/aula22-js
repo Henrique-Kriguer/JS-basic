@@ -1,0 +1,11 @@
+let vara = 'A';
+let varb = 'B';
+let varc = 'C';
+let step = null;
+
+step = vara;
+vara = varb;
+varb = varc;
+varc = step;
+
+console.log(vara, varb, varc);
