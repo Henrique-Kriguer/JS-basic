@@ -5,10 +5,14 @@ function calculaImc() {
     
     function recebeEventoForm(evento) {
         evento.preventDefault();
-        const peso = Number(form.querySelector('.peso'));
-        const altura = Number(form.querySelector('.altura'));
+        const inputPeso = evento.target.querySelector('.peso');
+        const inputAltura = evento.target.querySelector('.altura');
+        const peso = Number(inputPeso.value);
+        const altura = Number(inputAltura.value);
+        console.log(peso,altura);
+       
         const imc = peso / (altura * altura);
-        const imcInfo = "";
+        let imcInfo = "";
         if (imc <= 18.5) {
             imcInfo = "Abaixo do Peso.";
         } else if (imc > 18.5 && imc <= 24.9) {
@@ -23,15 +27,16 @@ function calculaImc() {
             imcInfo = "Obesidade grau 3";
         }
 
-        info.push({
+       /*info.push({
             peso: peso,
             altura: altura,
             imc: imc
-        });
-        console.log(info);
+        });*/
+        //console.log(info);
         resultado.innerHTML = `<p>Seu IMC: ${imc} : ${imcInfo}`
     }
     form.addEventListener('submit', recebeEventoForm);
+    
 }
 
 calculaImc();
