@@ -10,6 +10,15 @@ function calculaImc() {
         const peso = Number(inputPeso.value);
         const altura = Number(inputAltura.value);
         console.log(peso,altura);
+
+        if(!peso){
+            resultado.innerHTML = "Peso Invalido";
+            return
+        }
+        if(!altura){
+            resultado.innerHTML = "Altura Invalida";
+            return
+        }
        
         const imc = peso / (altura * altura);
         let imcInfo = "";
