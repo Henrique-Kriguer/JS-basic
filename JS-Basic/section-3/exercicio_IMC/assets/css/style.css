@@ -70,3 +70,13 @@ form button:hover {
 form button:active {
     background-color: red;
 }
+
+.paragrafo-resultado {
+    background-color: #2da788;
+    padding: 10px 10px;
+}
+
+.bad{
+    background-color: #ce0909;
+    padding: 10px 10px;
+}
