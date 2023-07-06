@@ -17,3 +17,4 @@ const corUsuario = null;
 const corPadrao = corUsuario || 'Preta';
 
 
+
