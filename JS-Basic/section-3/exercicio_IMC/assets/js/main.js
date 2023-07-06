@@ -3,7 +3,7 @@
 function blockFormSubmit() {
     const form = document.querySelector('.form');
 
-    form.addEventListener('submit', function(event){
+    form.addEventListener('submit', function(event){  // função anônima é parâmetro do método listener
         event.preventDefault();
 
         const inputPeso = event.target.querySelector('.peso');
@@ -56,9 +56,9 @@ function blockFormSubmit() {
         const p = criaP();
 
         if(isValid){
-            p.classList.add('.paragrafo-resultado')
+            p.classList.add('paragrafo-resultado')
         } else {
-            p.classList.add('.bad')
+            p.classList.add('bad')
         }
         p.innerHTML = msg
         resultado.appendChild(p);
