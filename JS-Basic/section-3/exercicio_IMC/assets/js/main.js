@@ -55,7 +55,7 @@ function blockFormSubmit() {
         
         const p = criaP();
 
-        if(isValid){
+        if(isValid){ // metodo para criar classe no paragrafo conforme resultado do que foi digitado pelo user
             p.classList.add('paragrafo-resultado')
         } else {
             p.classList.add('bad')
