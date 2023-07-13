@@ -28,7 +28,7 @@ function getWeekdayName(weekDay){
             return weekDayName;
     }
 }
-let data = new Date();
+const data = new Date('1971-10-23 00:01:00');
 let weekDay = data.getDay();
-let weekDaytext = getWeekdayName(weekDay);
+const weekDaytext = getWeekdayName(weekDay);
 console.log(weekDay,weekDaytext);
