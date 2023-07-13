@@ -19,7 +19,7 @@ console.log(data2.toString());
 
 // dado uma data, como separar ano, mes, dia ....
 
-const data3 = new Date(1688675292096);
+const data3 = new Date();
 console.log('Dia',data3.getDate());
 console.log('Mês',data3.getMonth()); // 0 - jan , 1 fev , 2 mar ...
 console.log('Ano',data3.getFullYear());
